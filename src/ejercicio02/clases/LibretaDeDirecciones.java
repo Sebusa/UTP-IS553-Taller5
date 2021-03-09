@@ -7,10 +7,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class LibretaDeDirecciones {
-    private static List<RegistroLibreta> libreta = new ArrayList<>();
+    private List<RegistroLibreta> libreta = new ArrayList<>();
     static Scanner input = new Scanner(System.in);
 
-    public static void añadirEntrada(){
+    public void añadirEntrada(){
         String nombre;
         String dirección;
         String número;
@@ -26,48 +26,41 @@ public class LibretaDeDirecciones {
         correo = input.next();
 
         var entrada = new RegistroLibreta(nombre, dirección, número, correo);
-        libreta.add(entrada);
+        this.libreta.add(entrada);
     }
 
-    public static void borrarEntrada(){
+    public void borrarEntrada(){
         System.out.print("Ingrese la posición de la lista a eliminar: ");
         int index = input.nextInt(); //Por alguna razón el .remove() de la lista no funciona con el wrapper Integer
 
-        if(index >= 0 && index < libreta.size()){
-            libreta.remove(index);
+        if(index >= 0 && index < this.libreta.size()){
+            this.libreta.remove(index);
         }
         else{
             System.out.println("Número de posición no válido.");
         }
     }
 
-    public static void mostrarEntradas(){
-        if(libreta.size() == 0){
+    public void mostrarEntradas(){
+        if(this.libreta.size() == 0){
             System.out.println("No hay nada que mostrar.");
         }
-        else if(libreta.size() == 1){
-            System.out.println("--ENTRADA " + 1 + "--");
-            System.out.println(libreta.get(0).getNombre());
-            System.out.println(libreta.get(0).getDirección());
-            System.out.println(libreta.get(0).getNúmeroDeTélefono());
-            System.out.println(libreta.get(0).getcorreoElectrónico());
-        }
         else{
-            for(Integer i = 0; i < libreta.size(); i++){
-                System.out.println("--ENTRADA " + i + "--");
-                System.out.println(libreta.get(i).getNombre());
-                System.out.println(libreta.get(i).getDirección());
-                System.out.println(libreta.get(i).getNúmeroDeTélefono());
-                System.out.println(libreta.get(i).getcorreoElectrónico());
+            System.out.println("Entradas ingresadas: ");
+            for(RegistroLibreta dato : this.libreta){
+                System.out.println("||" + dato.getNombre()
+                                    + "||" + dato.getDirección()
+                                    + "||" + dato.getNúmeroDeTélefono()
+                                    + "||" + dato.getcorreoElectrónico());
             }
         }
     }
 
-    public static void actualizarEntrada(){
+    public void actualizarEntrada(){
         System.out.print("Ingrese la posición de la entrada a actualizar: ");
         Integer index = input.nextInt();
 
-        if(index >= 0 && index < libreta.size()){
+        if(index >= 0 && index < this.libreta.size()){
             String nombre;
             String dirección;
             String número;
@@ -82,10 +75,10 @@ public class LibretaDeDirecciones {
             System.out.print("Nuevo correo electrónico: ");
             correo = input.next();
 
-            libreta.get(index).setNombre(nombre);
-            libreta.get(index).setDirección(dirección);
-            libreta.get(index).setNúmeroDeTélefono(número);
-            libreta.get(index).setcorreoElectrónico(correo);
+            this.libreta.get(index).setNombre(nombre);
+            this.libreta.get(index).setDirección(dirección);
+            this.libreta.get(index).setNúmeroDeTélefono(número);
+            this.libreta.get(index).setcorreoElectrónico(correo);
         }
         else{
             System.out.println("Número de posición no válido.");

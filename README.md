@@ -1,14 +1,15 @@
-## Getting Started
+## Taller 5 - Programación IV
+Este repositorio incluye los ejercicios realizados para el taller número 5 para la materia de programación IV.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Estructura del proyecto
 
-## Folder Structure
+Este proyecto está dividido en dos carpetas principales:
 
-The workspace contains two folders by default, where:
+- `src`: La carpeta principal donde se guardan todos los ejercicios y sus respectivas pruebas unitarias. Está integrada por una carpeta para cada ejercicio almacenadas de manera independiente, la cual se subdivide en dos partes:
+-- `clases`: Aquí se guardan las clases utilizadas para cada ejercicio.
+-- `test`: Aquí se guardan las pruebas unitarias para cada clase creada para cada ejercicio. 
+- `lib`: Aquí se guardan las dependencias necesarias para las pruebas unitarias de JUnit 5.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## ¿Cómo ejecutar el programa?
 
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+Dentro de la carpeta `src` está el archivo principal "Main.java". Lo único a realizar es ejecutar el archivo y listo.
