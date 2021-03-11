@@ -17,13 +17,13 @@ public class LibretaDeDirecciones {
         String correo;
 
         System.out.print("Ingrese el nombre: ");
-        nombre = input.next();
+        nombre = input.nextLine();
         System.out.print("Ingrese la dirección: ");
-        dirección = input.next();
+        dirección = input.nextLine();
         System.out.print("Ingrese el número de teléfono: ");
-        número = input.next();
+        número = input.nextLine();
         System.out.print("Ingrese el correo eléctrico: ");
-        correo = input.next();
+        correo = input.nextLine();
 
         var entrada = new RegistroLibreta(nombre, dirección, número, correo);
         this.libreta.add(entrada);
@@ -67,13 +67,13 @@ public class LibretaDeDirecciones {
             String correo;
     
             System.out.print("Nuevo nombre: ");
-            nombre = input.next();
+            nombre = input.nextLine();
             System.out.print("Nueva dirección: ");
-            dirección = input.next();
+            dirección = input.nextLine();
             System.out.print("Nuevo número de teléfono: "); 
-            número = input.next();
+            número = input.nextLine();
             System.out.print("Nuevo correo electrónico: ");
-            correo = input.next();
+            correo = input.nextLine();
 
             this.libreta.get(index).setNombre(nombre);
             this.libreta.get(index).setDirección(dirección);

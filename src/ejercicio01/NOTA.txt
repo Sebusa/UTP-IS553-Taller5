@@ -1,0 +1,1 @@
+La clase creada en esta carpeta se ejecuta en el Main.java de la carpeta 'ejercicio02'.

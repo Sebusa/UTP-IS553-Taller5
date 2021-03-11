@@ -12,4 +12,4 @@ Este proyecto está dividido en dos carpetas principales:
 
 ## ¿Cómo ejecutar el programa?
 
-Dentro de la carpeta `src` está el archivo principal "Main.java". Lo único a realizar es ejecutar el archivo y listo.
+Para cada ejercicio estará el archivo principal `Main.java`. Simplemente hay que ejecutarlo para cada ejercicio  y listo.
