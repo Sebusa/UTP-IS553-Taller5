@@ -1,4 +1,4 @@
-package ejercicio03;
+package ejercicio03.test;
 
 import ejercicio03.clases.EstudianteInformatica;
 import java.util.ArrayList;

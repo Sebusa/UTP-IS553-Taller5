@@ -1,4 +1,4 @@
-package ejercicio06;
+package ejercicio06.test;
 
 import ejercicio06.clases.ListaReales;
 

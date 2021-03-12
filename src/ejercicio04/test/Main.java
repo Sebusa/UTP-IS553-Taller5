@@ -1,4 +1,4 @@
-package ejercicio04;
+package ejercicio04.test;
 
 import ejercicio04.clases.PairOfDice;
 

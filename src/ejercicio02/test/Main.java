@@ -1,4 +1,4 @@
-package ejercicio02;
+package ejercicio02.test;
 
 import ejercicio02.clases.LibretaDeDirecciones;
 

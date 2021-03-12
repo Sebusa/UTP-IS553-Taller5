@@ -17,6 +17,7 @@ public class Main {
 
         System.out.println("Convirtiendo el número hexadecimal...");
         ejemplo.convertirNúmero();
+        System.out.println("El número resultante es: " + ejemplo.getDecimal());
 
         input.close();
     }

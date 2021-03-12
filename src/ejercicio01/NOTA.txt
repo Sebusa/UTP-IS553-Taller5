@@ -1,1 +1,3 @@
 La clase creada en esta carpeta se ejecuta en el Main.java de la carpeta 'ejercicio02'.
+Esta clase como solo cuenta con métodos constructores y mutadores no hay necesidad de hacer
+prueba unitaria de esta clase por su misma naturaleza.

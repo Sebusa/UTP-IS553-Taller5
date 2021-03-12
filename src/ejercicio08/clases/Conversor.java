@@ -27,10 +27,9 @@ public class Conversor {
         System.out.println("El número en decimal es: " + this.getDecimal());
     }
 
-    public Boolean convertirNúmero() throws InvalidNumberException{
+    public void convertirNúmero() throws InvalidNumberException{
         try{
             this.setDecimal(Integer.parseInt(this.getHexadecimal(),16));
-            return true;
         }
         catch(NumberFormatException e){
             var error = new InvalidNumberException("Número hexadecimal inválido.");
